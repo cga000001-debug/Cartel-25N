@@ -1,0 +1,46 @@
+/* =========================================================
+   tokens.css · Cartel de ejemplo
+   ========================================================= */
+
+
+:root {
+  /* ---------- Colores ---------- */
+  --purple:        hsl(267, 32%, 46%);
+  --blue:          hsl(224, 37%, 48%);
+  --orange:        hsl(9, 77%, 58%);
+  --light-orange:  hsl(8, 81%, 72%);
+  --background:    hsl(330, 43.75%, 87.45%);
+  --blanco:        hsl(0 0% 100%);
+
+  /* ---------- Texto ---------- */
+  --texto: #241C28;
+  --texto-claro: var(--blanco);
+
+  /* ---------- Tipografía ---------- */
+  --familia: system-ui, "Suez One", serif;
+  --tam-cifra: clamp(4.5rem, 20vw, 12rem);
+  --tam-titular: clamp(1.5rem, 4.5vw, 2.75rem);
+  --tam-texto: clamp(1.125rem, 2.2vw, 1.375rem);
+  --tam-nota: 0.875rem;
+
+  /* ---------- Espaciado ---------- */
+  --esp-s: 0.5rem;
+  --esp-m: 1.5rem;
+  --esp-l: 3rem;
+}
+
+/* ---------- Combinaciones AA ---------- */
+
+/*
+  Texto oscuro sobre fondo: 11.63:1
+  Texto oscuro sobre naranja: 4.64:1
+  Texto oscuro sobre naranja claro: 6.97:1
+
+  Blanco sobre morado: 6.29:1
+  Blanco sobre azul: 5.61:1
+
+  WCAG AA:
+  Texto normal: mínimo 4.5:1
+  Texto grande: mínimo 3:1
+*/
+
