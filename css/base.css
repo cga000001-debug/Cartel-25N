@@ -27,6 +27,20 @@
     font-style: italic;
 }
 
+h1{
+    font-family: var(--famili-head);
+    font-weight: 700;
+    font-style: normal;
+    font-size: var(--tam-titular);
+}
+.header__date{
+    font-family: var(--famili-head);
+    font-weight: 700;
+    font-style: normal;
+    font-size: var(--tam-cifra) ;
+}
+
+
 
 
 .galeria{
