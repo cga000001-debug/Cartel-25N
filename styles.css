@@ -1,0 +1,13 @@
+@layer reset, base, componentes, utilidades;
+
+@layer reset {
+  *, *::before, *::after { box-sizing: border-box; }
+}
+
+@layer componentes {
+  .boton { background: #1d3557; color: white; }
+}
+
+@layer utilidades {
+  .texto-centrado { text-align: center; }
+}
