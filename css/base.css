@@ -1,7 +1,7 @@
 /* estilos comunes */
 
-body{
-    background: var(--texto);
+body {
+  background: var(--texto);
 }
 
 /* Typos */
@@ -37,16 +37,16 @@ h2 {
 }
 
 /* Header*/
-header{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
-.header__date{
-    position: relative;
-    left: -55vw;
-    top: 20px;
+.header__date {
+  position: relative;
+  left: -55vw;
+  top: 20px;
 }
 .header__h1 {
   background-color: var(--purple);
@@ -55,10 +55,8 @@ header{
   padding: 0 4vw;
   clip-path: shape(
     from 10% 0%,
-    line to 95% 0%,
-    curve to 100% 5% with 100% 0%,
-    line to 100% 95%,
-    curve to 95% 100% with 100% 100%,
+    line to 100% 0%,
+    line to 100% 100%,
     line to 5% 100%,
     curve to 0.25% 95% with 0% 100%,
     line to 4.75% 5%,
@@ -80,17 +78,15 @@ header{
   padding: 0 4vw;
   clip-path: shape(
     from 5% 0%,
-    line to 95% 0%,
-    curve to 100% 5% with 100% 0%,
-    line to 100% 95%,
-    curve to 95% 100% with 100% 100%,
-    line to 8% 100%,
-    curve to 2.85% 95% with 3% 100%,
-    line to 0.15% 5%,
+    line to 100% 0%,
+    line to 100% 100%,
+    line to 10% 100%,
+    curve to 4.75% 95% with 5% 100%,
+    line to 0.25% 5%,
     curve to 5% 0% with 0% 0%,
     close
   );
-  
+
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
