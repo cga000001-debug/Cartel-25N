@@ -39,7 +39,7 @@
 
     .galeria {
         display: grid !important;
-        grid-template-columns: repeat(7, 1fr) !important;
+        git-template-columns: repeat(7, 1fr) !important;
         gap: 8px;
         height: auto !important;
         overflow: visible !important;
