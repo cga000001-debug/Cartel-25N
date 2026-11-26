@@ -1,7 +1,7 @@
 /* estilos comunes */
 
 body {
-  background: var(--texto);
+  background: var(--background);
 }
 
 /* Typos */
@@ -26,14 +26,20 @@ h2 {
 
   color: var(--orange);
   paint-order: stroke fill;
-  -webkit-text-stroke: 20px var(--background);
+  -webkit-text-stroke: var(--tam-texto) var(--blanco);
 }
 .header__date span {
   color: var(--purple);
 }
 
-.f-lv {
-  color: var(--background);
+.f-text {
+  color: var(--texto);
+  font-size: var(--tam-texto);
+  font-family: var(--famili-txt);
+}
+
+.f-w {
+  color: var(--blanco);
 }
 
 /* Header*/
@@ -72,7 +78,7 @@ header {
   text-box: trim-end cap alphabetic;
 }
 .header__h2 {
-  background-color: var(--background);
+  background-color: var(--blanco);
   height: 10vw;
   width: 75%;
   padding: 0 4vw;
@@ -93,7 +99,27 @@ header {
   text-align: right;
 }
 
+/* Galeria*/
+
 .galeria {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 40px;
+}
+
+/*Data*/
+
+.data {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/*Responsive*/
+@media screen and (min-width: 768px) {
+  .galeria {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .data {
+  grid-template-columns: 1fr 1fr;
+}
 }

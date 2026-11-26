@@ -31,7 +31,7 @@
 .galeria_card figcaption {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: safe center;
     gap: 1rem;
     padding: 1.5rem;
 
