@@ -10,16 +10,20 @@
     }
 
     body {
-        background-color: var(--background) !important; 
-        min-height: auto;
+        background-color: var(--background) !important;
+        min-height: 400mm !important;
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 !important;
     }
 
     header {
-        margin-bottom: 1.5rem;
+        margin-bottom: 0.05rem !important;
     }
 
     .header__date {
-        font-size: 5rem;
+        font-size: 10rem;
         left: 0;
         top: 10px;
         align-self: flex-start;
@@ -35,7 +39,7 @@
 
     .galeria {
         display: grid !important;
-        grid-template-columns: repeat(5, 1fr) !important;
+        grid-template-columns: repeat(7, 1fr) !important;
         gap: 8px;
         height: auto !important;
         overflow: visible !important;
@@ -63,6 +67,10 @@
     }
 
     .galeria_card figcaption {
+        display: none !important;
+    }
+
+    .data {
         display: none !important;
     }
 }
