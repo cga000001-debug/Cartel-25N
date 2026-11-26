@@ -1,0 +1,68 @@
+@media print {
+    * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    @page {
+        size: A3 portrait;
+        margin: 10mm;
+    }
+
+    body {
+        background-color: var(--background) !important; 
+        min-height: auto;
+    }
+
+    header {
+        margin-bottom: 1.5rem;
+    }
+
+    .header__date {
+        font-size: 5rem;
+        left: 0;
+        top: 10px;
+        align-self: flex-start;
+        margin-left: 2rem;
+        -webkit-text-stroke: 10px var(--background);
+    }
+
+    .header__h1,
+    .header__h2 {
+        height: auto;
+        padding: 0.75rem 2rem;
+    }
+
+    .galeria {
+        display: grid !important;
+        grid-template-columns: repeat(5, 1fr) !important;
+        gap: 8px;
+        height: auto !important;
+        overflow: visible !important;
+    }
+
+    .galeria_card {
+        perspective: none !important;
+        aspect-ratio: auto !important;
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
+        background-color: var(--background);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .galeria_card img {
+        position: static !important;
+        transform: none !important;
+        backface-visibility: visible !important;
+        transition: none !important;
+        width: 100% !important;
+        aspect-ratio: 3 / 4;
+        height: auto !important;
+        object-fit: cover;
+    }
+
+    .galeria_card figcaption {
+        display: none !important;
+    }
+}
